@@ -1,0 +1,18 @@
+@startuml
+Shape <|-- Circle
+Shape <|-- RegularPentagon
+
+abstract class Shape {
+  {abstract} double calculateArea()
+  {abstract} double calculatePerimeter()
+  boolean checkIfArgsGreaterThanZero(float ...){}
+}
+
+class Circle {
+
+  double calculateArea()
+  double calculatePerimeter()
+}
+
+
+@enduml
